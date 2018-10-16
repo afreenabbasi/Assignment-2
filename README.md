@@ -236,6 +236,29 @@ return 0;
 }
 
 
+Ques2:
 
 
+When a socket is created, the program has to specify the address domain and the socket type. Two processes can communicate with each other only if their sockets are of the same type and in the same domain.
 
+
+To run the client you need to pass in two arguments, the name of the host on which the server is running and the port number on which the server is listening for connections. 
+
+
+#include <stdio.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <netdb.h>
+
+
+void error(char *msg)
+{
+    perror(msg);
+    exit(0);
+}
+
+int main(int argc, char *argv[])
+{
+
+}
